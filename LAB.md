@@ -13,8 +13,10 @@ Refactor the provided chat server code as follows ...
 * Ensure that every function has JSDoc Notation
 * Convert to the use of events to trigger actions
 * Create a TCP Server using the NodeJS `net` module
+* Modularize the parser and socket pool into separately loadable (and test-able) modules
 * Modularize the actions into separately loadable (and test-able) modules
-* Create a Client constructor that models an individual connection 
+  * You can use a node module called 'require-directory' to read those in all at once.
+* Create a Client constructor module that models an individual connection 
   * Each client instance should contain (at least) `id`, `nickname`, and `socket` properties
 * Clients should be able to send messages to all other clients by sending it to the server
 * Clients should be able to run special commands by sending messages that start with a command name which in-turn emit an event that is handled by an action module.
@@ -23,7 +25,7 @@ Refactor the provided chat server code as follows ...
   * `@list` to list all connected users
   * `@nickname <new-name>` to change their nickname
   * `@dm <to-username> <message>` to send a message directly to another user by their nickname
-* Connected clients should be maintained in an in-memory collection (array) called the `clientPool`
+* Connected clients should be maintained in an in-memory collection (array) called the `socketPool`
   * When a socket emits the `close` event, the socket should be removed from the client pool
   * When a socket emits the `error` event, the error should be logged on the server
   * When a socket emits the `data` event, the data should be logged on the server and the commands below should be implemented
