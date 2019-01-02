@@ -1,15 +1,17 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB
+![CF](http://i.imgur.com/7v5ASc8.png) LAB 07
 =================================================
 
-## Project Name
+## ab 07 TCP Serer
 
-### Author: Student/Group Name
+### Author: Ryan Gallaway
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+
+[![Build Status](https://www.travis-ci.com/rkgallaway/07-tcp-server.svg?branch=master)](https://www.travis-ci.com/rkgallaway/07-tcp-server)
+
+* [repo](https://github.com/rkgallaway/07-tcp-server)
+* [travis](https://www.travis-ci.com/rkgallaway/07-tcp-server)
+* [server](https://lab-07-tcp-server.herokuapp.com)
 
 ### Modules
 #### `modulename.js`
@@ -23,20 +25,15 @@ Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - Port described in ENV
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* Endpoint: `./chatrooom`
+  * Begins chat.
 
 #### Tests
 * How do you run tests?
 * What assertions were made?
 * What assertions need to be / should be made?
 
-#### UML
-Link to an image of the UML for your application and response to events
