@@ -4,7 +4,7 @@
   "description": "",
   "main": "chatroom.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node chatroom.js",
     "lint": "eslint **/*.js",
     "test": "jest --verbose --coverage",
     "test-watch": "jest --watchAll --verbose --coverage"
@@ -15,7 +15,8 @@
   "dependencies": {
     "eslint": "^5.11.1",
     "jest": "^23.6.0",
-    "node": "^11.6.0",
-    "uuid": "^3.2.1"
+    "nc": "^1.0.2",
+    "node": "^11.5.0",
+    "uuid": "^3.3.2"
   }
 }

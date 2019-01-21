@@ -4,6 +4,7 @@
 ## ab 07 TCP Serer
 
 ### Author: Ryan Gallaway
+#### collaborated with / helped by Becca Lee and Heather Cherewaty
 
 ### Links and Resources
 
@@ -28,12 +29,13 @@ Usage Notes or examples
 * `PORT` - Port described in ENV
 
 #### Running the app
-* `npm start`
+* terminal 1: `nodemon`
+* terminal 2: nc localhost:3001 (for each user)
 * Endpoint: `./chatrooom`
   * Begins chat.
 
 #### Tests
-* How do you run tests?
+* `npm test`
 * What assertions were made?
 * What assertions need to be / should be made?
 
